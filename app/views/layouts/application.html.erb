@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= render 'layouts/railsDefault' %>
     <%= render "layouts/shim" %>
+    <%= javascript_importmap_tags %>
   </head>
   <body>
-
     <%= render "layouts/header" %>
     <div class="container wombo">
         <% flash.each do |message_type, message| %>
