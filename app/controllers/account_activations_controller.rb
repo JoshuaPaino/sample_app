@@ -1,5 +1,5 @@
 class AccountActivationsController < ApplicationController
-    before_create :create_activation_digest
+
 
     def edit
       user = User.find_by(email: params[:email])
@@ -14,9 +14,5 @@ class AccountActivationsController < ApplicationController
         redirect_to root_url
       end
     end
-    private
-
-  def create_activation_digest
-    # Create the token and digest.
-  end
+ 
 end
